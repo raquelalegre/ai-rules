@@ -63,7 +63,11 @@ Do not rerun a full local CI suite here unless no prior validation has been perf
 
 ### Body
 
-Priority 1: repo PR template
+Priority 1: repo PR template — check for `.github/pull_request_template.md` and follow it exactly.
+
+For Multiverse repos (remote URL contains `multiverse-io`), the template has a required **Links** section at the bottom. Always populate it:
+- `Linear card:` — include the full Linear URL if a ticket was found (e.g. `https://linear.app/multiverse-io/issue/SYNC-1234`)
+- `Blocked by:` / `Blocks:` — omit if not applicable
 
 Priority 2: fallback template:
 
@@ -85,7 +89,8 @@ Rules:
 
 - Summary must be 1–2 sentences max
 - If a design link was found, append `Design: [link]` in the context section
-- Do NOT include ticket IDs anywhere in the body
+- Do NOT include ticket IDs in the PR title
+- Ticket URL belongs in the body Links section only, not the title
 
 ## Step 5: Create the PR
 
