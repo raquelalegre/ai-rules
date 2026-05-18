@@ -7,14 +7,15 @@ Personal Claude Code plugins for structured engineering work. Two plugins coveri
 
 ## Install
 
-Clone this repo, then inside any Claude Code session:
+Clone this repo, then run in your terminal:
 
 ```
-/plugin marketplace add ~/workspace/personal/ai-rules
-/plugin install flow
-/plugin install harness
-/reload-plugins
+claude plugin marketplace add ~/workspace/personal/ai-rules
+claude plugin install flow
+claude plugin install harness
 ```
+
+Then open a fresh Claude Code session for the plugins to be active.
 
 ---
 
