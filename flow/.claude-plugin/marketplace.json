@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "flow",
+  "description": "Single-session implementation flow: plan → implement → review → ship.",
+  "owner": {
+    "name": "Raquel Alegre"
+  },
+  "plugins": [
+    {
+      "name": "flow",
+      "description": "Plan-driven engineering workflow for Claude Code: plan → implement → review → ship.",
+      "category": "development",
+      "source": "./"
+    }
+  ]
+}

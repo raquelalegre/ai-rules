@@ -1,0 +1,11 @@
+{
+  "name": "harness",
+  "description": "Multi-session engineering harness: session context handoff, plan worklogs, and wrap-up.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Raquel Alegre"
+  },
+  "skills": [
+    "./skills/wrap-up"
+  ]
+}

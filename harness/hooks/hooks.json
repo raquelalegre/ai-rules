@@ -1,0 +1,16 @@
+{
+  "description": "Auto-organise plan files into dated folders with worklogs",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/rename-plan.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

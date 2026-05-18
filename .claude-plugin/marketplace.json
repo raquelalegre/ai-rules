@@ -1,19 +1,22 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ai-rules",
-  "description": "Local marketplace for the flow plugin: plan-driven engineering workflow for Claude Code.",
+  "description": "Personal Claude Code plugins: single-session implementation flow and multi-session engineering harness.",
   "owner": {
-    "name": "Diane Maniere"
+    "name": "Raquel Alegre"
   },
   "plugins": [
     {
       "name": "flow",
-      "description": "Plan-driven engineering workflow for Claude Code: plan -> implement -> review -> ship.",
-      "author": {
-        "name": "Diane Maniere"
-      },
+      "description": "Single-session implementation flow: plan → implement → review → ship.",
       "category": "development",
-      "source": "./"
+      "source": "./flow"
+    },
+    {
+      "name": "harness",
+      "description": "Multi-session engineering harness: context handoff, plan worklogs, and wrap-up.",
+      "category": "development",
+      "source": "./harness"
     }
   ]
 }
